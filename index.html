@@ -1,16 +1,135 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-  </head>
-  <body>
-      <div>
-        <div ng-include="'partials/nav.html'"></div>
-          <div ng-view></div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio | Arwa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link href=" https://fonts.googleapis.com/css?family=Molle:400i " rel="stylesheet ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mainNav ">
+    <a class="navbar-brand " href="# ">
+      <img src="images/www.png " class="logo ">
+    </a>
+    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarText " aria-controls="navbarText "
+      aria-expanded="false " aria-label="Toggle navigation ">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse col-md-12 " id="navbarText ">
+      <ul class="navbar-nav mr-auto col-md-12 ">
+        <div class="col-md-3 ">
+          <li class="nav-item active ">
+            <a class="nav-link " href="#aboutMe">About me</a>
+          </li>
+        </div>
+        <div class="col-md-3 ">
+          <li class="nav-item ">
+            <a class="nav-link " href="# ">Projects</a>
+          </li>
+        </div>
+        <div class="col-md-3 ">
+          <li class="nav-item ">
+            <a class="nav-link " href="# ">Contact</a>
+          </li>
+        </div>
+        <div class="col-md-3 ">
+          <li class="nav-item ">
+            <a class="nav-link " href="# ">Resume</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <div class="conatinerDiv">
+    <section>
+      <div class=" aboutParallax image">
+        <div class="infoDiv ">
         </div>
       </div>
-  </body>
-  </html>
+    </section>
+    <section>
+      <div class="aboutMeParallax image"></div>
+    </section>
+    <section>
+      <div class="" id="aboutMe">
+        <div class="spacer "></div>
+        <div id="textDiv aboutMe" class="overflowCtrl">
+          <h3>About me!</h3>
+          <p>
+            My love for programming began when I was introduced to C and C++ languages in the 10th grade. Since then, I wanted to become
+            a software developer. This encouraged me to go forward with my passion and pursue Bachelors of Engineering in
+            Information Technology. The 4 year degree program gave me a very good introduction to the theoretical and practical
+            concept of many languages like C, C++, JAVA, C# dotNet, VB and SQL.
+          </p>
+
+          <p class="hiddenP hidden">Right after finishing my degree, I accepted an ad hoc lecturer position to teach Data Communication and Networking.
+            After teaching for a semester, I further advanced my programming skills by completing a certification course
+            in SQL.
+          </p>
+
+          <p class="hidden hiddenP">Moving to USA from India was a very big change for me and the supervisor job at Barnes and Noble helped me to get
+            acquainted with the culture and language of this country. However, I kept myself engaged with current technologies
+            and decided to go back to software developing and advance my real world software skills. I joined Nashville Software
+            School for this purpose and it has been a great decision for my career.
+          </p>
+        </div>
+        <button class="showMoreBtn" id="showMoreBtn">ShowMore</button>
+      </div>
+
+    </section>
+    <section>
+      <div class="projectParallax image1"></div>
+    </section>
+    <section class="projects">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">smartList</h4>
+              <img class="card-img-top" src="images/placeholder.jpg" alt="Card image cap">
+              <p class="card-text">A mobile app that never lets you forget important ingredients from your recipes. Generate an ingredient selector
+                list directly from recipe and make your shopping list from there. This app is made in Ionic 1 with firebase
+                as the database.</p>
+              <a href="https://github.com/Arwask/FrontendCapstone_SmartList" class="btn">
+                <i class="fa fa-github icon" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Special title treatment</h4>
+              <img class="card-img-top" src="images/placeholder.jpg" alt="Card image cap">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Special title treatment</h4>
+              <img class="card-img-top" src="images/placeholder.jpg" alt="Card image cap">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
