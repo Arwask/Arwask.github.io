@@ -55,8 +55,8 @@ body {
   background-attachment: fixed;
   /* background-position: center; */
   background-repeat: no-repeat;
-  background-size: 100% 100vh;
-  /* background-size: cover; */
+  /* background-size: 100% 100vh; */
+  background-size: cover;
 }
 
 .imageTrial {
@@ -188,13 +188,12 @@ body {
   /* transform: rotate(90deg); */
 }
 
-.icon {
-  width: 100px;
-  height: 100px;
-}
-
 .projects {
   padding: 10px 0;
+}
+
+.btn i {
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 426px) {
