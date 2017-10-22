@@ -126,7 +126,7 @@ body {
   background-size: cover;
 }
 
-.myImage {
+/* .myImage {
   width: 30vh;
   height: 30vh;
   float: right;
@@ -138,6 +138,16 @@ body {
   border-radius: 100%;
   width: 100%;
   height: 100%;
+} */
+
+.funImage {
+  width: 50%;
+  height: 50%;
+  margin: 0 25%;
+}
+
+.myImage {
+  width: 100%;
 }
 /********** Vertical Navbar *****************/
 
