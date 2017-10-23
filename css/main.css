@@ -112,15 +112,12 @@ body {
 .aboutMeParallax {
   /* The image used */
   background-image: url('../images/art7.jpg');
-  filter: alpha(opacity=50);
+  /* filter: alpha(opacity=50); */
   /* Set a specific height */
   min-height: 100vh;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
   background-size: cover;
 }
 
