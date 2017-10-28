@@ -10256,7 +10256,7 @@ return jQuery;
 },{}],2:[function(require,module,exports){
 'use strict';
 
-require('handlebars');
+let handlebars = require('handlebars');
 let $ = require('jquery');
 
 const { technologies } = require('../technologies.json');
@@ -10265,7 +10265,6 @@ let grid = require('../partials/technologies.hbs');
 
 let technologyGrid = grid({ technologies });
 $('#techGrid').append(technologyGrid);
-// $('#techGrid').on('mouseOver', tooltip('show'));
 
 },{"../partials/technologies.hbs":50,"../technologies.json":51,"handlebars":34,"jquery":1}],3:[function(require,module,exports){
 (function (process,__filename){
@@ -18641,15 +18640,15 @@ var HandlebarsCompiler = require('hbsfy/runtime');
 module.exports = HandlebarsCompiler.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "  <div class=\"col-6 col-md-4 col-lg-2 text-center\">\n    <img class=\"img-fluid logo-img w-75 img-thumbnail\" src=\"../images/technologies/"
+  return "  <div class=\"col-6 col-md-4 col-lg-2 text-center\">\r\n    <img class=\"img-fluid logo-img w-75 img-thumbnail\" src=\"../images/technologies/"
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
-    + ".png\">\n    <p class=\"logo-title\">"
+    + ".png\">\r\n    <p class=\"logo-title\">"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</p>\n  </div>\n";
+    + "</p>\r\n  </div>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"row\">\n"
+  return "<div class=\"row\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.technologies : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</div>";
 },"useData":true});
