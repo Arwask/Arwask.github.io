@@ -110,28 +110,33 @@ body {
 }
 
 .aboutMeParallax {
-  /* The image used */
   background-image: url('../images/art7.jpg');
-  filter: alpha(opacity=50);
-  /* Set a specific height */
   min-height: 100vh;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: 100% 100%; */
   background-size: cover;
 }
 
 .funImage {
-  width: 50%;
-  height: 50%;
-  margin: 0 25%;
+  width: 30%;
+  height: 30%;
+  margin: 0 20%;
 }
 
 .myImage {
   width: 100%;
+}
+
+.card {
+  font-size: 0.7em;
+}
+
+.aboutContainer {
+  box-shadow: 0 5px 20px 1px gray;
+  padding: 10px;
+  font-size: 0.9em;
+  border-radius: 10px;
+  margin: 10px -10px;
 }
 /********** Vertical Navbar *****************/
 
@@ -170,10 +175,10 @@ body {
 
 .projectParallax {
   /* The image used */
-  background-image: url('../images/arwa6.jpg');
+  background-image: url('../images/image1.jpg');
 
   /* Set a specific height */
-  min-height: 100vh;
+  min-height: 50vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   /* background-position: center; */
@@ -190,6 +195,13 @@ body {
   font-size: 2em;
 }
 
+.stonesImg {
+  width: 50%;
+  height: 20%;
+  margin: 10% 25%;
+  opacity: 0.7;
+}
+
 @media only screen and (max-width: 426px) {
   body {
     font-size: 1em;
@@ -199,5 +211,11 @@ body {
   .aboutMeParallax,
   .aboutParallax {
     background-size: 100vh 100vh;
+  }
+
+  .funImage {
+    width: 50%;
+    height: 50%;
+    margin: 0 25%;
   }
 }
