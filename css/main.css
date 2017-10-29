@@ -46,16 +46,10 @@ body {
 }
 
 .aboutParallax {
-  /* The image used */
   background-image: url('../images/art5.jpg');
-
-  /* Set a specific height */
   min-height: 100vh;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: 100% 100vh; */
   background-size: cover;
 }
 
@@ -175,17 +169,12 @@ body {
 /*********** PROJECT *******/
 
 .projectParallax {
-  /* The image used */
   background-image: url('../images/project.jpg');
   opacity: 0.7;
-  /* Set a specific height */
-  min-height: 50vh;
-  /* Create the parallax scrolling effect */
+  min-height: 50%;
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  /* transform: rotate(90deg); */
 }
 
 .projects {
@@ -197,23 +186,47 @@ body {
 }
 
 .stonesImg {
-  width: 50%;
-  height: 20%;
-  margin: 40% 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 70%;
+  width: 70%;
+  max-width: 70%;
+  justify-content: center;
+  z-index: 1000;
+  margin: 0 auto;
+  position: relative;
+  padding: 15% 0;
 }
-.techImg {
-  width: 50%;
-  height: 20%;
-  margin: 40% 25%;
-  opacity: 0.9;
-}
+
+/******** TECHNOLOGY*******/
+
 .techParallax {
   background-image: url('../images/technologiesBg.png');
   opacity: 0.9;
-  min-height: 50vh;
+  min-height: 50%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.techImg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 70%;
+  width: 70%;
+  max-width: 70%;
+  justify-content: center;
+  z-index: 1000;
+  margin: 0 auto;
+  position: relative;
+  padding: 15% 0;
+  opacity: 0.9;
+}
+
+.techIcons {
+  border: 0;
 }
 
 @media only screen and (max-width: 426px) {
