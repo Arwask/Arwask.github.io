@@ -2,6 +2,31 @@ body {
   border: 5px solid white;
 }
 
+.intro_img {
+  background-image: url('../images/new_bg_1.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro_text_img {
+  background-image: url('../images/Hi!\ I\ am\ Arwa.jpg');
+  min-height: 61vh;
+  min-width: 50vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  z-index: 10;
+  background-position-y: 30%;
+}
+
+.intro_text_container {
+  width: 50%;
+  height: 50%;
+}
+
 .containerDiv {
   display: flex;
   align-content: center;
@@ -42,7 +67,6 @@ body {
   height: 100%;
   position: absolute;
   z-index: 500;
-  /* opacity: 0.4; */
 }
 
 .aboutParallax {
@@ -81,8 +105,8 @@ body {
   padding: 0 5% 5% 5%;
   z-index: 1;
   border-radius: 10px;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12),
-    0 8px 10px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12),
+    0 8px 10px 5px rgba(0, 0, 0, 0.2); */
   height: 300px;
   font-size: 2.5vh;
 }
@@ -126,11 +150,9 @@ body {
 }
 
 .aboutContainer {
-  box-shadow: 0 5px 20px 1px gray;
   width: 99%;
   padding: 10px;
-  font-size: 0.9em;
-  border-radius: 10px;
+  font-size: 2rem;
   margin: 10px auto;
 }
 /********** Vertical Navbar *****************/
