@@ -10,45 +10,11 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-  <link href=" https://fonts.googleapis.com/css?family=Molle:400i " rel="stylesheet ">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <!-- Nav bar -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-    <a class="navbar-brand " href="# ">
-    </a>
-    <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarText" aria-controls="navbarText "
-      aria-expanded="false " aria-label="Toggle navigation ">
-      <span class="navbar-toggler-icon "></span>
-    </button>
-
-    <div class="collapse navbar-collapse col-md-12 " id="navbarText">
-      <ul class="navbar-nav mr-auto col-md-12 ">
-        <div class="col-md-3 ">
-          <li class="nav-item active ">
-            <a class="nav-link " href="#aboutMe">About me</a>
-          </li>
-        </div>
-        <div class="col-md-3 ">
-          <li class="nav-item ">
-            <a class="nav-link " href="# ">Projects</a>
-          </li>
-        </div>
-        <div class="col-md-3 ">
-          <li class="nav-item ">
-            <a class="nav-link " href="# ">Contact</a>
-          </li>
-        </div>
-        <div class="col-md-3 ">
-          <li class="nav-item ">
-            <a class="nav-link " href="# ">Resume</a>
-          </li>
-        </div>
-      </ul>
-    </div>
-  </nav> -->
 
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <a class="navbar-brand" href="#aboutMe">
@@ -70,7 +36,7 @@
           <a class="nav-item nav-link" href="#technologies">Technologies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link" target="_blank" href="Arwa_SoftwareDev.pdf">Resume</a>
@@ -92,135 +58,209 @@
     </section>
   </div>
 
-
-  <!-- second-parallax -->
-
-  <!-- <section>
-      <div class="aboutMeParallax image" title="About me"></div>
-    </section> -->
-
   <!-- About me description and image -->
+  <div class="linebreak"></div>
 
-  <!-- <section>
-      <div id="aboutMe">
-        <div class="spacer "></div>
-        <h3>About me!</h3>
-        <img src="./images/underline.png" />
-        <div>
-          <div class="myImage">
-            <img src="images/framed.jpg" class="funImage">
-          </div>
-          <div class=" aboutContainer">
-            <p>
-              My love for programming began when I was introduced to C, C++ and HTML in the 10th grade. Having only
-              surfed the webpages
-              on internet, it amazed me how writing some syntax in a logical and organized way can result into a
-              webpage
-              or an application. Since then, I wanted to become a software developer and thus acquired the 4 year
-              Engineering
-              degree.
-            </p>
+  <section>
+    <div id="aboutMe">
+      <h3 class="section_header">Why I chose to be a developer?</h3>
+      <div class="aboutMe_text">
 
-            <p>I love logical thinking and coming up with better ways of solving the same problem. Solving bugs in my
-              code gives
-              me more reasons to think of all the possibilities as well as search and learn new ways of solving
-              problems.
-              When am not on my laptop coding, I like to paint, sketch, go hiking or just watch some TV shows. I like
-              playing
-              word games and learning new board games. I love traveling and want to explore more places.
-            </p>
-          </div>
-        </div>
+        <p>
+          My love for programming began when I was introduced to C, C++ and HTML in the 10th grade. Having only
+          surfed the webpages on internet, it amazed me how writing some syntax in a logical and organized way can
+          result
+          into a
+          webpage or an application. Since then, I just knew that I wanted to become a software developer and thus
+          acquired the 4 year Engineering degree.
+        </p>
+        <p>
+          I love logical thinking and coming up with efficient ways of solving the same problem. Solving bugs in my
+          code gives
+          me more reasons to think of all the possibilities as well as search and learn new things and new ways of
+          solving
+          problems.
+          When am not on my laptop coding, I like to paint, sketch, go hiking or just watch some TV shows. I like
+          playing
+          word games and learning new board games. I love traveling and want to explore more places.
+        </p>
       </div>
-    </section> -->
+    </div>
+  </section>
 
-  <!-- Project Parallax -->
+  <div class="linebreak"></div>
 
 
   <!-- Project Cards -->
 
-  <!-- <section class="projects" id="myProjects">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">smart-list</h4>
-              <img class="card-img-top" src="images/ionic.png" alt="Card image cap">
-              <p class="card-text">A mobile app that never lets you forget important ingredients from your recipes.
-                Generate an ingredient selector
-                list directly from recipe and make your shopping list from there. This app is made in Ionic 1 with the
-                help
-                of firebase as the database.
-                <br>
-                <br>
-                <span class="note">(NOTE: This app is best viewed in mobile as its a mobile app.)</span>
-              </p>
-              <a href="https://github.com/Arwask/FrontendCapstone_SmartList" class="btn">
-                <i class="fa fa-github icon" aria-hidden="true"></i>
-              </a>
-              <a href="https://smart-list-d50e4.firebaseapp.com/#/" class="btn">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">onTheClok</h4>
-              <img class="card-img-top" src="images/ontheclock.png" alt="Card image cap">
-              <p class="card-text">This app's main aim is to help managers ease their process of making schedules for
-                employees working in their
-                department. It has two views, Manager's and Employee's view with different functionalities. The project
-                is
-                made in using NodeJs as server and express framework with pug.</p>
-              <a href="https://github.com/Arwask/Schedule-app" class="btn">
-                <i class="fa fa-github icon" aria-hidden="true"></i>
-              </a>
-               <a href="#" class="btn">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-              </a>
-  </div>
-  </div>
-  </div>
-  </div> -->
-  <!-- <div class="col-sm-4">
+  <section class="projects" id="myProjects">
+    <div class="project_header">
+      <h1 class="section_header proj_header">My projects</h1>
+    </div>
+    <div class="linebreak"></div>
+    <div class="row">
+      <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Bangazon-corp</h4>
-            <img class="card-img-top" src="" alt="Card image cap">
-            <p class="card-text">An e-commerce organization created as a group project at NSS. Its a perfect example of team work. Each individual
-              project in the organization is a result of a week long sprint. Techonoligies like Node, express, prompt and
-              other developer dependencies were used. There are four projects which includes an API, a CLI app, Employee
-              management system and E-commerce website.
+            <h4 class="card-title">smart-list</h4>
+            <img class="card-img-top" src="images/ionic.png" alt="Card image cap">
+            <p class="card-text">A mobile app that never lets you forget important ingredients from your recipes by
+              letting you shopping list directly from there. This app is made in Ionic 1 and firebase as the database.
+              <br>
+              <br>
+              <span class="note">(NOTE: This app is best viewed in mobile as its a mobile app.)</span>
             </p>
-            <a href="https://github.com/Delicate-Butterflies" class="btn">
-              <i class="fa fa-github icon" aria-hidden="true"></i>
+            <a href="https://github.com/Arwask/FrontendCapstone_SmartList" class="btn">
+              <i class="fa fa-code-fork" aria-hidden="true"></i>
+            </a>
+            <a href="https://smart-list-d50e4.firebaseapp.com/#/" class="btn">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">YAK-Socializing App</h4>
+            <img class="card-img-top" src="images/yak.png" alt="Card image cap">
+            <p class="card-text">An app made entirely in Reactjs with help of React-dom. It lets users socialize with
+              their friends. A user can
+              login to see any public and private posts and events from their friends. They can create new
+              public/private posts and new events, search for friends and posts by them using keywords.
+              <br>
+            </p>
+            <a href="https://github.com/Arwask/yak-25" class="btn">
+              <i class="fa fa-code-fork" aria-hidden="true"></i>
             </a>
             <a href="#" class="btn">
               <i class="fa fa-globe" aria-hidden="true"></i>
             </a>
           </div>
         </div>
-      </div> -->
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Bangazon-corp</h4>
+            <img class="card-img-top" src="./images/cli.png" alt="bangazon corp">
+            <p class="card-text">An e-commerce organization created as a group project at NSS. Its a perfect example of
+              team work. Each individual
+              project in the organization is a result of a week long sprint. Techonoligies like Node, express, prompt
+              and
+              other developer dependencies were used. There are four projects which includes an API, a CLI app,
+              Employee
+              management system and E-commerce website.
+            </p>
+            <a href="https://github.com/Delicate-Butterflies" class="btn">
+              <i class="fa fa-code-fork" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="btn">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">onTheClok</h4>
+            <img class="card-img-top" src="images/ontheclock.png" alt="Card image cap">
+            <p class="card-text">This app helps managers ease their process of making schedules for
+              employees working in their
+              department. It has two views, Manager's view with functionalities like logging in, access employee's
+              profile, scheduling and eployee's view with setting availabilities and access profile. The project
+              is
+              made using NodeJs as server and express framework with pug.two views
+              <br />
+              <br />
+              <span>(Use IDs 90123 and 90133 with passwords '1234' to view both views)</span>
+            </p>
+            <a href="https://github.com/Arwask/Schedule-app" class="btn">
+              <i class="fa fa-code-fork" aria-hidden="true"></i>
+            </a>
+            <a href="https://on-the-clock.herokuapp.com/" class="btn">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-  <!-- </section> -->
+    </div>
+  </section>
+
+  <div class="linebreak"></div>
 
   <!-- Technologies list -->
 
+  <section id="technologies" class="technologiesContainer">
+    <div class="project_header">
+      <h1 class="section_header">Technologies I'm familliar with</h1>
+    </div>
+    <article class="container">
+      <div id="techGrid"></div>
+    </article>
+  </section>
 
+  <div class="linebreak"></div>
 
-  <!-- <section id="technologies" class="technologiesContainer">
-      <article class="container">
-        <div id="techGrid"></div>
-      </article>
-    </section>
+  <!-- Conatct Me -->
 
-  </div>
+  <section id="timeline-wrapper">
+    <div class="container-fluid" id="contact">
+      <div class="project_header">
+        <h1 class="section_header">Contact Me</h1>
+      </div>
+      <div class="row">
+        <div class="timeline-top">
+        </div>
+        <div class="timeline-block">
+          <div class="timeline-events">
+            <br>
+            <div class="row"></div>
+            <div class="event r-event col-md-6 col-sm-6 col-xs-8 ">
+              <i class="thumb fa fa-envelope-open" aria-hidden="true"></i>
+              <div class=" event-body">
+                <div class="event-content">
+                  <h3 class="text-left">arwa.it15@gmail.com</h3>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row"></div>
+            <div class="event l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb fa fa-phone-square"></span>
+              <div class=" event-body">
+                <div class="event-content">
+                  <h3 class="text-left">(615)516-5667</h3>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row"></div>
+            <div class="event r-event col-md-6 col-sm-6 col-xs-8 ">
+              <span class="thumb fa fa-github-alt"></span>
+              <div class=" event-body">
 
-  </div>
-  </div>
-  <footer>2017 &copy; Arwa Kuterwadliwala</footer> -->
+                <div class="event-content">
+                  <h5 class="text-left"><a href="https://github.com/Arwask">
+                      <h3>https://github.com/Arwask</h3>
+                    </a></h5>
+
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="linebreak"></div>
+
+  <footer class="footer">2017 &copy; Arwa Kuterwadliwala</footer>
 
   <!-- Dev -->
   <script src="./lib/node_modules/jquery/dist/jquery.js "></script>

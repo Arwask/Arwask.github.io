@@ -8,10 +8,23 @@ const { technologies } = require('../technologies.json');
 
 let grid = require('../partials/technologies.hbs');
 
-console.log('technologies', technologies);
-
 let technologyGrid = grid({ technologies });
 $('#techGrid').append(technologyGrid);
+
+$(function() {
+  var watchScroll = 0;
+  var rightComments = $('.r-event .event-body');
+  var leftComments = $('.l-event .event-body');
+  TweenMax.staggerFrom(rightComments, 1, { x: 100, ease: Bounce.easeOut }, 1);
+  TweenMax.staggerFrom(leftComments, 1, { x: -100, ease: Bounce.easeOut }, 1);
+
+  $(window).on('scroll', function() {
+    var scrollTop = $(window).scrollTop();
+    scrollTop > watchScroll ? $('footer').addClass('footer-up') : $('footer').removeClass('footer-up');
+
+    watchScroll = scrollTop;
+  });
+});
 
 },{"../partials/technologies.hbs":50,"../technologies.json":51,"handlebars":33,"jquery":47}],2:[function(require,module,exports){
 (function (process,__filename){
@@ -18673,6 +18686,10 @@ module.exports={
     {
       "name": "Ionic",
       "image": "ionic"
+    },
+    {
+      "name": "ReactJs",
+      "image": "react"
     },
     {
       "name": "jQuery",
