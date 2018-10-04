@@ -17,6 +17,10 @@
       "image": "ionic"
     },
     {
+      "name": "ReactJs",
+      "image": "react"
+    },
+    {
       "name": "jQuery",
       "image": "jquery"
     },
